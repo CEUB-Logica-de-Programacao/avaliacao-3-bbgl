@@ -33,7 +33,7 @@ def q1(heights):
         else:
             pass
 
-    print(maxnum)
+    return maxnum
 
 
 
