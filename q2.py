@@ -24,11 +24,14 @@ def q2(start, end):
     num = []
     num.extend(range(start, end +1))
     numpro = []
+    if 1 in num:
+        numpro.append(1)
 
     for i in num:
         for n in range(i):
             if n*n == i:
                 numpro.append(i)
+
     return numpro
 
 
