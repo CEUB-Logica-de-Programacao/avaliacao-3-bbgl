@@ -23,10 +23,17 @@
 
 def q1(heights):
     max = 0
+    maxnum = 1
 
     for i in heights:
-        if i == 180:
-            max += 1
+        if i > max:
+            max = i
+        elif i == max:
+            maxnum += 1
+        else:
+            pass
+
+print(maxnum)
 
 
 
